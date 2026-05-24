@@ -1,3 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environnement local
+api/.env
+api/api_keys.db
+
+# Fichiers générés à valider manuellement avant d'intégrer
+scripts/osm_candidates.csv
+All/all_cleaned.csv
+
+# Outils locaux
+.claude/
+
 !/list_of_guadeloupe_waters.iml
 !.idea/
 ### JetBrains template

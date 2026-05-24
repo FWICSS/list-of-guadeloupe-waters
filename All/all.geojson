@@ -1,0 +1,3533 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.359171,
+          16.3004007
+        ]
+      },
+      "properties": {
+        "nom": "Rivière d'Audoin",
+        "type": "river",
+        "commune": "Sainte-Anne",
+        "code_postal": "97180",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5248714,
+          16.2567174
+        ]
+      },
+      "properties": {
+        "nom": "Ravine Bacadore",
+        "type": "river",
+        "commune": "Les Abymes",
+        "code_postal": "97101",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7712066,
+          16.2669616
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de Baille-Argent",
+        "type": "river",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7303847,
+          16.0348095
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Baillif",
+        "type": "river",
+        "commune": "Baillif",
+        "code_postal": "97123",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6071132,
+          16.0153596
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Bananier",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7434107,
+          16.236248
+        ]
+      },
+      "properties": {
+        "nom": "Baraguet",
+        "type": "river",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7335328,
+          16.1091115
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de Beaugendre",
+        "type": "river",
+        "commune": "Vieux-Habitants",
+        "code_postal": "97119",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7720716,
+          16.1562519
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Bourceau",
+        "type": "river",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.670177,
+          16.1958792
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Bras-David",
+        "type": "river",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7835744,
+          16.2333037
+        ]
+      },
+      "properties": {
+        "nom": "Caillou (rivière)",
+        "type": "river",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5891732,
+          16.2354032
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Coin",
+        "type": "river",
+        "commune": "Baie-Mahault",
+        "code_postal": "97122",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7554573,
+          16.1833152
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Colas",
+        "type": "river",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.698446,
+          16.159159
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Corossol",
+        "type": "river",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.685871,
+          16.1702927
+        ]
+      },
+      "properties": {
+        "nom": "Rivière aux écrevisses",
+        "type": "river",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7788455,
+          16.2742012
+        ]
+      },
+      "properties": {
+        "nom": "Petite Rivière (Deshaies)",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7912243,
+          16.2846206
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Ferry",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7175775,
+          15.9915418
+        ]
+      },
+      "properties": {
+        "nom": "Galion",
+        "type": "river",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.3340658,
+          16.3204266
+        ]
+      },
+      "properties": {
+        "nom": "Ravine Gardel",
+        "type": "river",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5098955,
+          16.3893612
+        ]
+      },
+      "properties": {
+        "nom": "Ravine Gaschet",
+        "type": "river",
+        "commune": "Petit-Canal",
+        "code_postal": "97131",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5762623,
+          16.128716
+        ]
+      },
+      "properties": {
+        "nom": "Petite Rivière à Goyave",
+        "type": "river",
+        "commune": "Goyave",
+        "code_postal": "97128",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6521285,
+          16.0456536
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Grand Carbet",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.66274,
+          15.9747587
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Grande Anse",
+        "type": "river",
+        "commune": "Trois-Rivières",
+        "code_postal": "97114",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7587313,
+          16.2073175
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Grande Plaine",
+        "type": "river",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6583083,
+          16.2110427
+        ]
+      },
+      "properties": {
+        "nom": "Grande Rivière à Goyaves",
+        "type": "river",
+        "commune": "Lamentin",
+        "code_postal": "97129",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6095181,
+          16.0716221
+        ]
+      },
+      "properties": {
+        "nom": "Grande Rivière de la Capesterre",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7535793,
+          16.0574966
+        ]
+      },
+      "properties": {
+        "nom": "Grande Rivière des Vieux-Habitants",
+        "type": "river",
+        "commune": "Vieux-Habitants",
+        "code_postal": "97119",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7229751,
+          15.9977243
+        ]
+      },
+      "properties": {
+        "nom": "Rivière aux Herbes",
+        "type": "river",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5762167,
+          16.262076
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Houaromand",
+        "type": "river",
+        "commune": "Baie-Mahault",
+        "code_postal": "97122",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7162141,
+          16.2182987
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Bois Bananes",
+        "type": "river",
+        "commune": "Lamentin",
+        "code_postal": "97129",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7256875,
+          16.1989262
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Bras de Sable",
+        "type": "river",
+        "commune": "Lamentin",
+        "code_postal": "97129",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6296489,
+          16.2712906
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Lamentin",
+        "type": "river",
+        "commune": "Lamentin",
+        "code_postal": "97129",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6289797,
+          16.1924028
+        ]
+      },
+      "properties": {
+        "nom": "Lézarde",
+        "type": "river",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7630044,
+          16.1618501
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Lostau",
+        "type": "river",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7729536,
+          16.3245179
+        ]
+      },
+      "properties": {
+        "nom": "La Rate (rivière)",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7758399,
+          16.2980244
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Deshaies",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7325739,
+          16.3316921
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Madame",
+        "type": "river",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7797695,
+          16.3103858
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Mitan",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7852314,
+          16.3220858
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Ziotte",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6137259,
+          16.2511524
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Mahault",
+        "type": "river",
+        "commune": "Baie-Mahault",
+        "code_postal": "97122",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.788849,
+          16.2803454
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Maleville",
+        "type": "river",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6115387,
+          16.1228525
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Moreau",
+        "type": "river",
+        "commune": "Goyave",
+        "code_postal": "97128",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6270731,
+          16.161369
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Moustique (Petit-Bourg)",
+        "type": "river",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7156788,
+          16.29505
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Moustique (Sainte-Rose)",
+        "type": "river",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7542009,
+          16.3052626
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de Nogent",
+        "type": "river",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7382042,
+          16.0101017
+        ]
+      },
+      "properties": {
+        "nom": "Rivière des Pères",
+        "type": "river",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5876107,
+          16.0549835
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Pérou",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5131676,
+          16.303908
+        ]
+      },
+      "properties": {
+        "nom": "Canal de Perrin",
+        "type": "river",
+        "commune": "Les Abymes",
+        "code_postal": "97111",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6476056,
+          16.015253
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Petit Carbet",
+        "type": "river",
+        "commune": "Trois-Rivières",
+        "code_postal": "97114",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7612504,
+          16.2244085
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Petite Plaine",
+        "type": "river",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6548523,
+          16.0808028
+        ]
+      },
+      "properties": {
+        "nom": "Petite Rivière de la Capesterre",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.73222,
+          16.0515187
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Plessis",
+        "type": "river",
+        "commune": "Baillif",
+        "code_postal": "97123",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7192642,
+          16.3265206
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de la Ramée",
+        "type": "river",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.370506,
+          16.333419
+        ]
+      },
+      "properties": {
+        "nom": "Ravine du Nord-Ouest",
+        "type": "river",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7049073,
+          15.9755789
+        ]
+      },
+      "properties": {
+        "nom": "Ravine Salée",
+        "type": "river",
+        "commune": "Gourbeyre",
+        "code_postal": "97113",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7565113,
+          16.1363365
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de Bouillante",
+        "type": "river",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.58501054933737,
+          16.14746825
+        ]
+      },
+      "properties": {
+        "nom": "Rivière la Rose",
+        "type": "river",
+        "commune": "Goyave",
+        "code_postal": "97128",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.4727585,
+          16.3417751
+        ]
+      },
+      "properties": {
+        "nom": "Canal des Rotours",
+        "type": "river",
+        "commune": "Morne-à-l'Eau",
+        "code_postal": "97111",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5685049,
+          16.0420951
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Saint-Denis",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.2567917,
+          15.9206299
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de Saint-Louis",
+        "type": "river",
+        "commune": "Capesterre-de-Marie-Galante",
+        "code_postal": "97140",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5753476,
+          16.0944915
+        ]
+      },
+      "properties": {
+        "nom": "Rivière de Sainte-Marie",
+        "type": "river",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7125403,
+          16.319438
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Salée (Sainte-Rose)",
+        "type": "river",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5835297,
+          16.1619879
+        ]
+      },
+      "properties": {
+        "nom": "Rivière la Sarcelle",
+        "type": "river",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7077573,
+          15.9911075
+        ]
+      },
+      "properties": {
+        "nom": "Rivière Sens",
+        "type": "river",
+        "commune": "Gourbeyre",
+        "code_postal": "97113",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7537483,
+          16.3342279
+        ]
+      },
+      "properties": {
+        "nom": "Rivière du Vieux-Fort (Basse-Terre)",
+        "type": "river",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6963257,
+          16.2799701
+        ]
+      },
+      "properties": {
+        "nom": "Cascade de Bis",
+        "type": "waterfall",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5879838,
+          16.0121246
+        ]
+      },
+      "properties": {
+        "nom": "Chutes du Carbet",
+        "type": "waterfall",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.697559,
+          16.2137003
+        ]
+      },
+      "properties": {
+        "nom": "Cascade de Bois Bananes",
+        "type": "waterfall",
+        "commune": "Lamentin",
+        "code_postal": "97129",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.681502,
+          16.1782001
+        ]
+      },
+      "properties": {
+        "nom": "Cascade aux écrevisses",
+        "type": "waterfall",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6320533,
+          15.9750941
+        ]
+      },
+      "properties": {
+        "nom": "Cascade de la Coulisse",
+        "type": "waterfall",
+        "commune": "Trois-Rivières",
+        "code_postal": "97114",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6628519,
+          16.0316324
+        ]
+      },
+      "properties": {
+        "nom": "Chute du Galion",
+        "type": "waterfall",
+        "commune": "Gourbeyre",
+        "code_postal": "97113",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.655486,
+          16.1777377
+        ]
+      },
+      "properties": {
+        "nom": "Saut de la Lézarde",
+        "type": "waterfall",
+        "commune": "Petit-Bourg",
+        "code_postal": "97170",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7049264,
+          16.0466812
+        ]
+      },
+      "properties": {
+        "nom": "Saut de Matouba",
+        "type": "waterfall",
+        "commune": "Saint-Claude",
+        "code_postal": "97120",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.653489,
+          16.1061775
+        ]
+      },
+      "properties": {
+        "nom": "Chutes Moreau",
+        "type": "waterfall",
+        "commune": "Goyave",
+        "code_postal": "97128",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.7264673,
+          16.2856945
+        ]
+      },
+      "properties": {
+        "nom": "Saut des Trois Cornes",
+        "type": "waterfall",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.51292251848841,
+          16.4712254
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Chapelle",
+        "type": "beach",
+        "commune": "Anse-Bertrand",
+        "code_postal": "97121",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.50102770703285,
+          16.4840421
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse Laborde",
+        "type": "beach",
+        "commune": "Anse-Bertrand",
+        "code_postal": "97121",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.49737344283831,
+          16.48569885
+        ]
+      },
+      "properties": {
+        "nom": "Trou à Man Lwi",
+        "type": "beach",
+        "commune": "Anse-Bertrand",
+        "code_postal": "97121",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5229615710841,
+          16.46269045
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse Colas",
+        "type": "beach",
+        "commune": "Anse-Bertrand",
+        "code_postal": "97121",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.44169813718631,
+          16.4862218
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Porte d'Enfer",
+        "type": "beach",
+        "commune": "Anse-Bertrand",
+        "code_postal": "97121",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.74835409528754,
+          16.0273327
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Sources",
+        "type": "beach",
+        "commune": "Baillif",
+        "code_postal": "97123",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.71551434365537,
+          15.9808561
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Rivière-Sens",
+        "type": "beach",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.74835409528754,
+          16.0273327
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Sources",
+        "type": "beach",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.75490434892015,
+          16.040281049999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Val de l'Orge",
+        "type": "beach",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.76089250991379,
+          16.04659015
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Rocroy",
+        "type": "beach",
+        "commune": "Basse-Terre",
+        "code_postal": "97100",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.77511726090683,
+          16.1483888
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse à Sable",
+        "type": "beach",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.77069854617928,
+          16.09606265
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Petite Anse",
+        "type": "beach",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 87,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.77642613263339,
+          16.171961699999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Malendure",
+        "type": "beach",
+        "commune": "Bouillante",
+        "code_postal": "97125",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.55902578446879,
+          16.093152850000003
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Roseau",
+        "type": "beach",
+        "commune": "Capesterre-Belle-Eau",
+        "code_postal": "97130",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.22297658187817,
+          15.888384649999999
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Feuillère",
+        "type": "beach",
+        "commune": "Capesterre-de-Marie-Galante",
+        "code_postal": "97140",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.22676685185252,
+          15.88585115
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Ferrière",
+        "type": "beach",
+        "commune": "Capesterre-de-Marie-Galante",
+        "code_postal": "97140",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.233512877083335,
+          15.8799991
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Petite Anse",
+        "type": "beach",
+        "commune": "Capesterre-de-Marie-Galante",
+        "code_postal": "97140",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.19982923575483,
+          15.91126345
+        ]
+      },
+      "properties": {
+        "nom": "Plages des Galets",
+        "type": "beach",
+        "commune": "Capesterre-de-Marie-Galante",
+        "code_postal": "97140",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.71551434365537,
+          15.9808561
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Rivière-Sens",
+        "type": "beach",
+        "commune": "Gourbeyre",
+        "code_postal": "97113",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.0703128517749,
+          16.3029607
+        ]
+      },
+      "properties": {
+        "nom": "Plage à Fifi",
+        "type": "beach",
+        "commune": "La Désirade",
+        "code_postal": "97127",
+        "ile": "La Désirade"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.07782551766479,
+          16.299796899999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage à Fanfan",
+        "type": "beach",
+        "commune": "La Désirade",
+        "code_postal": "97127",
+        "ile": "La Désirade"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.0447154225855,
+          16.3103181
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Souffleur",
+        "type": "beach",
+        "commune": "La Désirade",
+        "code_postal": "97127",
+        "ile": "La Désirade"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.09432905735294,
+          16.2938592
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Galets",
+        "type": "beach",
+        "commune": "La Désirade",
+        "code_postal": "97127",
+        "ile": "La Désirade"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.01397384834617,
+          16.32934815
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Baie-Mahault",
+        "type": "beach",
+        "commune": "La Désirade",
+        "code_postal": "97127",
+        "ile": "La Désirade"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.79495035693684,
+          16.30550125
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Deshaies",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.801744239267016,
+          16.2861063
+        ]
+      },
+      "properties": {
+        "nom": "Plage Bosco",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.787775332636315,
+          16.3350309
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Rifflet",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.80418566891362,
+          16.27547895
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Leroux",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.776615914551826,
+          16.3472683
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Petit Bas Vent",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.77451180079052,
+          16.3494147
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Grand Bas Du Vent",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.76891510447059,
+          16.350813950000003
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Tillet",
+        "type": "beach",
+        "commune": "Deshaies",
+        "code_postal": "97126",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.28939031480863,
+          15.871186699999999
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Bébés",
+        "type": "beach",
+        "commune": "Grand-Bourg",
+        "code_postal": "97112",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.33427747157042,
+          15.925298699999999
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Trois Îlets",
+        "type": "beach",
+        "commune": "Grand-Bourg",
+        "code_postal": "97112",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.32334671335073,
+          15.94934955
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Folle Anse",
+        "type": "beach",
+        "commune": "Grand-Bourg",
+        "code_postal": "97112",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.494683533183874,
+          16.20475935
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Datcha",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.50049828874144,
+          16.205391149999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse Tabarin",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.50738695589777,
+          16.21226975
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Grand Baie",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.46984685795807,
+          16.19938965
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Vinaigri",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.52743113669399,
+          16.2163743
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Caye d'Argent",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.443026224105544,
+          16.205200599999998
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Salines",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.42569407483619,
+          16.20927915
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Petit-Havre",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.42335849942228,
+          16.209645899999998
+        ]
+      },
+      "properties": {
+        "nom": "Les Deux Oursins",
+        "type": "beach",
+        "commune": "Le Gosier",
+        "code_postal": "97190",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.52613450339696,
+          16.341054200000002
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Babin",
+        "type": "beach",
+        "commune": "Morne-à-l'Eau",
+        "code_postal": "97111",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.49656663633388,
+          16.3786408
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Port",
+        "type": "beach",
+        "commune": "Morne-à-l'Eau",
+        "code_postal": "97111",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.51077688872549,
+          16.38738635
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Pointe Sable",
+        "type": "beach",
+        "commune": "Morne-à-l'Eau",
+        "code_postal": "97111",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.340883371115154,
+          16.32966285
+        ]
+      },
+      "properties": {
+        "nom": "Plage de L'Autre Bord",
+        "type": "beach",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.340525706509354,
+          16.3326014
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Autre Bord",
+        "type": "beach",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.33777376165689,
+          16.33331855
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'autre bord",
+        "type": "beach",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.3361038,
+          16.3335341
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Alizés",
+        "type": "beach",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.324999,
+          16.3319922
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Montal",
+        "type": "beach",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.32505851490956,
+          16.3321348
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Dauphins",
+        "type": "beach",
+        "commune": "Le Moule",
+        "code_postal": "97160",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.49656663633388,
+          16.3786408
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Port",
+        "type": "beach",
+        "commune": "Petit-Canal",
+        "code_postal": "97131",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.402691424261604,
+          16.41659005
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse des Corps",
+        "type": "beach",
+        "commune": "Petit-Canal",
+        "code_postal": "97131",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.52743113669399,
+          16.2163743
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Caye d'Argent",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.523198811680516,
+          16.21408675
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Bas-du-Fort",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.50738695589777,
+          16.21226975
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Grand Baie",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 131,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.50049828874144,
+          16.205391149999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse Tabarin",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 132,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.494683533183874,
+          16.20475935
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Datcha",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 133,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.252348462854656,
+          15.992527299999999
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse à Coq",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 134,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.32334671335073,
+          15.94934955
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Folle Anse",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 135,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30549652586426,
+          15.981853399999999
+        ]
+      },
+      "properties": {
+        "nom": "Anse Canot",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 136,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30150112603694,
+          15.9877459
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Vieux Fort",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 137,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.29869161612311,
+          15.99218105
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Bambou",
+        "type": "beach",
+        "commune": "Pointe-à-Pitre",
+        "code_postal": "97110",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 138,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.792032226050424,
+          16.235477850000002
+        ]
+      },
+      "properties": {
+        "nom": "Plage Marigot",
+        "type": "beach",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 139,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.78272410002048,
+          16.2122042
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse Caraïbe",
+        "type": "beach",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 140,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.80580252514425,
+          16.2679297
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Petite Anse",
+        "type": "beach",
+        "commune": "Pointe-Noire",
+        "code_postal": "97116",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 141,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.53244632007299,
+          16.413437700000003
+        ]
+      },
+      "properties": {
+        "nom": "Plage à Jouibert",
+        "type": "beach",
+        "commune": "Port-Louis",
+        "code_postal": "97117",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 142,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.535721077135506,
+          16.4286248
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Souffleur",
+        "type": "beach",
+        "commune": "Port-Louis",
+        "code_postal": "97117",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 143,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.528362099403196,
+          16.403484249999998
+        ]
+      },
+      "properties": {
+        "nom": "Anse Gris Gris",
+        "type": "beach",
+        "commune": "Port-Louis",
+        "code_postal": "97117",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 144,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.5367406042464,
+          16.434504949999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Antigues",
+        "type": "beach",
+        "commune": "Port-Louis",
+        "code_postal": "97117",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 145,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.51077688872549,
+          16.38738635
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Pointe Sable",
+        "type": "beach",
+        "commune": "Port-Louis",
+        "code_postal": "97117",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 146,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.280335252590376,
+          16.250192849999998
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Raisins Clairs",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 147,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.2675518,
+          16.2506377
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Haut du Bourg",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 148,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.265553491660725,
+          16.25092
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Pointe des Pies",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 149,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.26438667657909,
+          16.2519513
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Lagon",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 150,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.26204099224294,
+          16.25312155
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Champagne",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 151,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30588096398627,
+          16.2420741
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse des Rochers",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 152,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.248199281310676,
+          16.2784098
+        ]
+      },
+      "properties": {
+        "nom": "Anse à la Baie",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 153,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.24325521991395,
+          16.27349545
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Rouleaux",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 154,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.23100070992571,
+          16.2530775
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la Douche",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 155,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.22988467616641,
+          16.2528635
+        ]
+      },
+      "properties": {
+        "nom": "Plage de la douche",
+        "type": "beach",
+        "commune": "Saint-François",
+        "code_postal": "97118",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 156,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30549652586426,
+          15.981853399999999
+        ]
+      },
+      "properties": {
+        "nom": "Anse Canot",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.74835409528754,
+          16.0273327
+        ]
+      },
+      "properties": {
+        "nom": "Plage des Sources",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 158,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30150112603694,
+          15.9877459
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Vieux Fort",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 159,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.75490434892015,
+          16.040281049999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Val de l'Orge",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 160,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.29869161612311,
+          15.99218105
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Bambou",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 161,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.76089250991379,
+          16.04659015
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Rocroy",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 162,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.252348462854656,
+          15.992527299999999
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse à Coq",
+        "type": "beach",
+        "commune": "Saint-Louis",
+        "code_postal": "97134",
+        "ile": "Marie-Galante"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 163,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.38097426571734,
+          16.222571000000002
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Bourg",
+        "type": "beach",
+        "commune": "Sainte-Anne",
+        "code_postal": "97180",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 164,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.39450045445376,
+          16.218232399999998
+        ]
+      },
+      "properties": {
+        "nom": "La Caravelle",
+        "type": "beach",
+        "commune": "Sainte-Anne",
+        "code_postal": "97180",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 165,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.36823032510067,
+          16.2326105
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Belley",
+        "type": "beach",
+        "commune": "Sainte-Anne",
+        "code_postal": "97180",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 166,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.34715958678582,
+          16.23728375
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Bois Jolan",
+        "type": "beach",
+        "commune": "Sainte-Anne",
+        "code_postal": "97180",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 167,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.33933869077809,
+          16.2414418
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Gros Sable",
+        "type": "beach",
+        "commune": "Sainte-Anne",
+        "code_postal": "97180",
+        "ile": "Grande-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 168,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.717643726043804,
+          16.345109649999998
+        ]
+      },
+      "properties": {
+        "nom": "Plage Mambia",
+        "type": "beach",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 169,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.74227310174806,
+          16.36051425
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Petit Fort",
+        "type": "beach",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 170,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.747154454314725,
+          16.3567246
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse des Îles",
+        "type": "beach",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 171,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.759146263917145,
+          16.35525475
+        ]
+      },
+      "properties": {
+        "nom": "Plage",
+        "type": "beach",
+        "commune": "Sainte-Rose",
+        "code_postal": "97115",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 172,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.624811243532776,
+          15.85944395
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Grande-Anse",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.62044851040858,
+          15.8555148
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Grand Baie",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 174,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.646856359700905,
+          15.85403465
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse à Dos",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 175,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.579576682314,
+          15.85800055
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Rodrigue",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 176,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.588745982678915,
+          15.85904835
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Figuier",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 177,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.57139823307925,
+          15.8721812
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Pompierre",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 178,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.59876457041109,
+          15.863518
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Pain de Sucre",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 179,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.602652890899776,
+          15.8577711
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Crawen",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 180,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.58734369686084,
+          15.8392761
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse du Grand-Etang",
+        "type": "beach",
+        "commune": "Terre-de-Bas",
+        "code_postal": "97136",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 181,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.579576682314,
+          15.85800055
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Rodrigue",
+        "type": "beach",
+        "commune": "Terre-de-Haut",
+        "code_postal": "97137",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 182,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.588745982678915,
+          15.85904835
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Figuier",
+        "type": "beach",
+        "commune": "Terre-de-Haut",
+        "code_postal": "97137",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 183,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.57139823307925,
+          15.8721812
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Pompierre",
+        "type": "beach",
+        "commune": "Terre-de-Haut",
+        "code_postal": "97137",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 184,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.59876457041109,
+          15.863518
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Pain de Sucre",
+        "type": "beach",
+        "commune": "Terre-de-Haut",
+        "code_postal": "97137",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 185,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.602652890899776,
+          15.8577711
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Crawen",
+        "type": "beach",
+        "commune": "Terre-de-Haut",
+        "code_postal": "97137",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 186,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.58734369686084,
+          15.8392761
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Anse du Grand-Etang",
+        "type": "beach",
+        "commune": "Terre-de-Haut",
+        "code_postal": "97137",
+        "ile": "Les Saintes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 187,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.29869161612311,
+          15.99218105
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse Bambou",
+        "type": "beach",
+        "commune": "Vieux-Fort",
+        "code_postal": "97141",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 188,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30150112603694,
+          15.9877459
+        ]
+      },
+      "properties": {
+        "nom": "Plage du Vieux Fort",
+        "type": "beach",
+        "commune": "Vieux-Fort",
+        "code_postal": "97141",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 189,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30549652586426,
+          15.981853399999999
+        ]
+      },
+      "properties": {
+        "nom": "Anse Canot",
+        "type": "beach",
+        "commune": "Vieux-Fort",
+        "code_postal": "97141",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 190,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.30778149752429,
+          15.978006950000001
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Moustique",
+        "type": "beach",
+        "commune": "Vieux-Fort",
+        "code_postal": "97141",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 191,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.252348462854656,
+          15.992527299999999
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse à Coq",
+        "type": "beach",
+        "commune": "Vieux-Fort",
+        "code_postal": "97141",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 192,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.32334671335073,
+          15.94934955
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Folle Anse",
+        "type": "beach",
+        "commune": "Vieux-Fort",
+        "code_postal": "97141",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 193,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.76857369415267,
+          16.05715185
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Simaho",
+        "type": "beach",
+        "commune": "Vieux-Habitants",
+        "code_postal": "97119",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 194,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.76889955787496,
+          16.0683875
+        ]
+      },
+      "properties": {
+        "nom": "Plage de l'Étang",
+        "type": "beach",
+        "commune": "Vieux-Habitants",
+        "code_postal": "97119",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 195,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.76089250991379,
+          16.04659015
+        ]
+      },
+      "properties": {
+        "nom": "Plage de Rocroy",
+        "type": "beach",
+        "commune": "Vieux-Habitants",
+        "code_postal": "97119",
+        "ile": "Basse-Terre"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 196,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.75490434892015,
+          16.040281049999997
+        ]
+      },
+      "properties": {
+        "nom": "Plage d'Anse du Val de l'Orge",
+        "type": "beach",
+        "commune": "Vieux-Habitants",
+        "code_postal": "97119",
+        "ile": "Basse-Terre"
+      }
+    }
+  ]
+}

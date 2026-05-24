@@ -1,0 +1,14 @@
+{
+  "total": 196,
+  "beaches": 122,
+  "rivers": 64,
+  "waterfalls": 10,
+  "by_island": {
+    "Grande-Terre": 64,
+    "Basse-Terre": 97,
+    "Marie-Galante": 15,
+    "La Désirade": 5,
+    "Les Saintes": 15
+  },
+  "last_updated": "2026-05-23"
+}

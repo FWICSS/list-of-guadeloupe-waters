@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api/api_keys.db:/app/api_keys.db
+    environment:
+      - DOCS_DIR=/docs
+      - DATA_PATH=/docs/data.json
+    env_file:
+      - api/.env
+    restart: unless-stopped

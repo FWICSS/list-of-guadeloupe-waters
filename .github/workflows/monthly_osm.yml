@@ -1,0 +1,49 @@
+name: Monthly OSM Sync
+
+on:
+  schedule:
+    - cron: '0 8 1 * *'  # 1st of every month at 08:00 UTC
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  fetch-osm:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Fetch OSM candidates
+        run: python3 scripts/fetch_osm.py
+
+      - name: Check for new candidates
+        id: check
+        run: |
+          if [ -f scripts/osm_candidates.csv ]; then
+            count=$(tail -n +2 scripts/osm_candidates.csv | wc -l | tr -d ' ')
+            echo "count=$count" >> $GITHUB_OUTPUT
+          else
+            echo "count=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create issue if new candidates
+        if: steps.check.outputs.count > 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const count = '${{ steps.check.outputs.count }}';
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[OSM] ${count} nouveaux candidats à intégrer`,
+              body: `La vérification mensuelle OpenStreetMap a trouvé **${count} lieux** potentiellement manquants dans le dataset.\n\nRevoir \`scripts/osm_candidates.csv\` et intégrer les entrées pertinentes dans \`All/all.csv\`.\n\n*Généré automatiquement le ${new Date().toISOString().split('T')[0]}*`,
+              labels: ['data', 'automated']
+            });

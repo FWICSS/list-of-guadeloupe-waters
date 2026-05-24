@@ -1,0 +1,37 @@
+name: Validate & Regenerate
+
+on:
+  pull_request:
+    paths:
+      - 'All/all.csv'
+  push:
+    branches:
+      - master
+    paths:
+      - 'All/all.csv'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Validate data
+        run: python3 scripts/validate_data.py
+
+      - name: Regenerate all formats
+        run: python3 scripts/generate_all.py
+
+      - name: Check for uncommitted changes
+        run: |
+          git diff --exit-code || (echo "Generated files need to be committed" && exit 1)

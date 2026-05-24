@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../docs/data.json:/data/data.json:ro
+      - ./api_keys.db:/app/api_keys.db
+    environment:
+      - DATA_PATH=/data/data.json
+    env_file:
+      - .env
+    restart: unless-stopped

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eaux de Guadeloupe — Plages, Rivières & Cascades</title>
+  <meta name="description" content="Dataset ouvert des plages, rivières et cascades de Guadeloupe. API REST, GeoJSON, KML, CSV.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+
+  <style>
+    :root {
+      --navy:          #061624;
+      --navy-mid:      #0a2540;
+      --navy-lite:     #0f3460;
+      --teal:          #00CED1;
+      --teal-dark:     #00a0a3;
+      --sand:          #F4A460;
+      --blue:          #1E90FF;
+      --white:         #f0f8ff;
+      --muted:         rgba(240,248,255,0.5);
+      --glass-bg:      rgba(255,255,255,0.04);
+      --glass-border:  rgba(0,206,209,0.15);
+      --radius:        16px;
+      --nav-h:         68px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── GRAIN OVERLAY ── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-h);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 3rem);
+      transition: background 0.4s, border-color 0.4s;
+      border-bottom: 1px solid transparent;
+    }
+    nav.scrolled {
+      background: rgba(6,22,36,0.88);
+      backdrop-filter: blur(20px);
+      border-color: var(--glass-border);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-links .nav-cta {
+      background: var(--teal);
+      color: var(--navy);
+      padding: 0.45rem 1.1rem;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+    .nav-links .nav-cta:hover { background: var(--teal-dark); color: var(--navy); }
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .nav-burger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--white); border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: calc(var(--nav-h) + 3rem) clamp(1.5rem, 5vw, 4rem) 5rem;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--navy);
+      z-index: 0;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      width: 900px; height: 900px;
+      background: radial-gradient(circle, rgba(0,206,209,0.13) 0%, transparent 65%);
+      top: -250px; left: 50%;
+      animation: glow-a 9s ease-in-out infinite;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(30,144,255,0.09) 0%, transparent 65%);
+      bottom: -100px; right: -50px;
+      animation: glow-b 12s ease-in-out infinite;
+    }
+    @keyframes glow-a {
+      0%,100% { transform: translateX(-50%) scale(1);   opacity: 0.7; }
+      50%      { transform: translateX(-50%) scale(1.2); opacity: 1;   }
+    }
+    @keyframes glow-b {
+      0%,100% { transform: scale(1);   opacity: 0.5; }
+      50%      { transform: scale(1.3); opacity: 0.9; }
+    }
+
+    /* Floating dots */
+    .particles { position: absolute; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
+    .particle {
+      position: absolute;
+      background: var(--teal);
+      border-radius: 50%;
+      opacity: 0;
+      animation: rise linear infinite;
+    }
+    @keyframes rise {
+      0%   { opacity: 0;   transform: translateY(0)      scale(0); }
+      10%  { opacity: 0.5; }
+      90%  { opacity: 0.15; }
+      100% { opacity: 0;   transform: translateY(-110vh) scale(1.5); }
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 820px; }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      border: 1px solid rgba(0,206,209,0.3);
+      background: rgba(0,206,209,0.06);
+      backdrop-filter: blur(10px);
+      padding: 0.38rem 1.1rem;
+      border-radius: 50px;
+      margin-bottom: 2rem;
+    }
+    .pill-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
+
+    h1.hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.8rem, 11vw, 7.5rem);
+      font-weight: 700;
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.75rem;
+      background: linear-gradient(140deg, #e8f5ff 0%, var(--teal) 45%, #d0eeff 80%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300%;
+      animation: text-shift 10s linear infinite;
+    }
+    @keyframes text-shift {
+      0%   { background-position: 0%   50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0%   50%; }
+    }
+    .hero-title em { font-style: italic; font-weight: 300; }
+
+    .hero-sub {
+      font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+
+    /* Stat chips */
+    .stats-row {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.8rem;
+    }
+    .stat-chip {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(12px);
+      border-radius: 14px;
+      padding: 0.9rem 1.4rem;
+      text-align: center;
+      min-width: 100px;
+    }
+    .stat-num {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--teal);
+      line-height: 1;
+    }
+    .stat-lbl {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    /* CTA buttons */
+    .ctas {
+      display: flex;
+      gap: 0.9rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--teal);
+      color: var(--navy);
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 28px rgba(0,206,209,0.28);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 44px rgba(0,206,209,0.5); }
+    .btn-ghost {
+      background: var(--glass-bg);
+      color: var(--white);
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 0.92rem;
+      text-decoration: none;
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(10px);
+      transition: all 0.2s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(0,206,209,0.4); }
+
+    /* Hero wave */
+    .wave-sep { display: block; width: 100%; overflow: hidden; line-height: 0; }
+
+    /* ── MAP SECTION ── */
+    #carte {
+      position: relative;
+      height: 90vh;
+      min-height: 500px;
+    }
+    #map { width: 100%; height: 100%; }
+
+    .map-panel {
+      position: absolute;
+      top: 14px; right: 14px;
+      z-index: 500;
+      background: rgba(6,22,36,0.88);
+      backdrop-filter: blur(22px);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      padding: 1.1rem;
+      width: 252px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .panel-title {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    .search-box { position: relative; }
+    .search-box input {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 0.5rem 0.7rem 0.5rem 2rem;
+      color: var(--white);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.83rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-box input:focus { border-color: var(--teal); }
+    .search-box input::placeholder { color: rgba(240,248,255,0.3); }
+    .search-ico { position: absolute; left: 0.6rem; top: 50%; transform: translateY(-50%); font-size: 0.75rem; opacity: 0.4; }
+
+    .filter-lbl {
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.4rem; display: block;
+    }
+    .checks { display: flex; flex-direction: column; gap: 0.35rem; }
+    .chk {
+      display: flex; align-items: center; gap: 0.5rem;
+      cursor: pointer; font-size: 0.83rem; user-select: none;
+    }
+    .chk input { display: none; }
+    .chk-box {
+      width: 15px; height: 15px; border-radius: 4px;
+      border: 2px solid; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s;
+      font-size: 9px; color: #fff;
+    }
+    .chk input:checked + .chk-box::after { content: '✓'; }
+    .chk input:checked + .chk-box { background: currentColor; }
+    .chk-beach .chk-box  { border-color: #F4A460; color: #F4A460; }
+    .chk-river .chk-box  { border-color: #1E90FF; color: #1E90FF; }
+    .chk-fall  .chk-box  { border-color: #00CED1; color: #00CED1; }
+    .map-select {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 0.5rem 0.7rem;
+      color: var(--white);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.83rem;
+      outline: none; cursor: pointer;
+    }
+    .map-select option { background: var(--navy-mid); }
+    .map-count {
+      font-size: 0.78rem; text-align: center; color: var(--muted);
+      padding: 0.35rem 0.5rem;
+      background: rgba(0,206,209,0.05);
+      border-radius: 6px; border: 1px solid rgba(0,206,209,0.1);
+    }
+    .map-count strong { color: var(--teal); }
+
+    /* ── SECTIONS SHARED ── */
+    section.content-section {
+      padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem);
+    }
+    .section-wrap { max-width: 1100px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 0.8rem; display: block;
+    }
+    h2.section-h {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.08;
+      margin-bottom: 1rem;
+    }
+
+    /* ── FEATURES ── */
+    #features { background: linear-gradient(180deg, var(--navy-mid) 0%, var(--navy) 100%); }
+    #features h2.section-h { margin-bottom: 3rem; }
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.4rem;
+    }
+    .feat-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .feat-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0,206,209,0.38);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .feat-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+    .feat-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem; font-weight: 600;
+      margin-bottom: 0.65rem;
+    }
+    .feat-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.75; }
+
+    /* ── API ── */
+    #api { background: var(--navy); }
+    .api-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .api-left p {
+      font-size: 0.93rem; color: var(--muted);
+      line-height: 1.8; margin: 1rem 0 2rem;
+    }
+    .endpoints { display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 2rem; }
+    .ep {
+      display: flex; align-items: center; gap: 0.6rem;
+      font-size: 0.82rem; font-family: monospace;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px; padding: 0.5rem 0.85rem;
+    }
+    .method {
+      font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em;
+      padding: 0.18rem 0.48rem; border-radius: 4px;
+      background: rgba(0,206,209,0.14); color: var(--teal);
+      flex-shrink: 0;
+    }
+    .method.post { background: rgba(244,164,96,0.14); color: var(--sand); }
+
+    .code-blocks { display: flex; flex-direction: column; gap: 1rem; }
+    .code-block {
+      background: rgba(0,0,0,0.45);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px; overflow: hidden;
+    }
+    .code-head {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 0.55rem 1rem;
+      background: rgba(255,255,255,0.025);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .dots { display: flex; gap: 5px; }
+    .dots span { width: 10px; height: 10px; border-radius: 50%; }
+    .d-r { background: #ff5f57; } .d-y { background: #febc2e; } .d-g { background: #28c840; }
+    .code-lang { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; }
+    .code-body {
+      padding: 1rem 1.2rem;
+      font-family: monospace; font-size: 0.81rem;
+      line-height: 1.75; overflow-x: auto;
+      color: rgba(240,248,255,0.82);
+      white-space: pre;
+    }
+    .t-g { color: #98c379; } .t-b { color: #61afef; }
+    .t-p { color: #c678dd; } .t-y { color: #e5c07b; }
+
+    /* ── PRICING ── */
+    #tarifs {
+      background: linear-gradient(180deg, var(--navy) 0%, var(--navy-mid) 100%);
+      text-align: center;
+    }
+    #tarifs h2.section-h { margin-bottom: 0.5rem; }
+    .tarifs-sub { font-size: 0.93rem; color: var(--muted); margin-bottom: 3rem; }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.4rem;
+      max-width: 740px; margin: 0 auto;
+    }
+    .price-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px; padding: 2.4rem;
+      text-align: left; position: relative;
+      backdrop-filter: blur(12px);
+    }
+    .price-card.hot {
+      border-color: var(--teal);
+      background: linear-gradient(140deg, rgba(0,206,209,0.07) 0%, rgba(6,22,36,0.9) 100%);
+    }
+    .hot-badge {
+      position: absolute; top: -13px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--teal); color: var(--navy);
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.28rem 1rem; border-radius: 50px;
+      white-space: nowrap;
+    }
+    .price-tier {
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 0.6rem;
+    }
+    .price-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.4rem; font-weight: 700;
+      line-height: 1; margin-bottom: 0.2rem;
+    }
+    .price-val sub { font-size: 1rem; font-weight: 400; vertical-align: middle; }
+    .price-desc { font-size: 0.83rem; color: var(--muted); margin-bottom: 1.8rem; }
+    .price-features { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 1.8rem; }
+    .price-features li {
+      font-size: 0.88rem; display: flex;
+      align-items: center; gap: 0.6rem;
+      color: rgba(240,248,255,0.82);
+    }
+    .price-features li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+
+    /* Registration form */
+    .reg-form { display: flex; flex-direction: column; gap: 0.7rem; }
+    .reg-form input {
+      width: 100%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.11);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      color: var(--white);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.88rem;
+      outline: none; transition: border-color 0.2s;
+    }
+    .reg-form input:focus { border-color: var(--teal); }
+    .reg-form input::placeholder { color: rgba(240,248,255,0.28); }
+    .btn-teal-full {
+      width: 100%; padding: 0.8rem;
+      border-radius: 8px; border: none; cursor: pointer;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem; font-weight: 700;
+      background: var(--teal); color: var(--navy);
+      transition: all 0.2s;
+    }
+    .btn-teal-full:hover { background: var(--teal-dark); }
+    .btn-teal-full:disabled { opacity: 0.6; cursor: not-allowed; }
+    .btn-outline-full {
+      display: block; width: 100%; padding: 0.8rem;
+      border-radius: 8px; text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem; font-weight: 600;
+      background: transparent; color: var(--white);
+      border: 1px solid var(--glass-border);
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-outline-full:hover { border-color: var(--teal); color: var(--teal); }
+    .key-out {
+      display: none;
+      background: rgba(0,206,209,0.08);
+      border: 1px solid rgba(0,206,209,0.25);
+      border-radius: 8px; padding: 0.7rem 0.9rem;
+      font-family: monospace; font-size: 0.78rem;
+      color: var(--teal); word-break: break-all;
+    }
+    .key-out.show { display: block; }
+    .key-err { display: none; font-size: 0.78rem; color: #ff6b6b; }
+    .key-err.show { display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2.2rem clamp(1.5rem, 5vw, 4rem);
+      background: var(--navy-mid);
+      border-top: 1px solid var(--glass-border);
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .foot-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--white); text-decoration: none;
+    }
+    .foot-copy { font-size: 0.8rem; color: var(--muted); }
+    .foot-links { display: flex; gap: 1.4rem; }
+    .foot-links a {
+      font-size: 0.8rem; color: var(--muted);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .foot-links a:hover { color: var(--teal); }
+
+    /* ── SCROLL FADE ── */
+    .fade-up {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-up.in { opacity: 1; transform: translateY(0); }
+    .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .fade-up:nth-child(3) { transition-delay: 0.2s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: fixed; inset: var(--nav-h) 0 0;
+        background: rgba(6,22,36,0.97);
+        backdrop-filter: blur(20px);
+        padding: 2rem; gap: 1.5rem; z-index: 999;
+      }
+      .nav-burger { display: flex; }
+      .api-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .map-panel { top: auto; bottom: 12px; left: 8px; right: 8px; width: auto; }
+      footer { flex-direction: column; text-align: center; }
+      .foot-links { justify-content: center; }
+    }
+
+    /* Leaflet popup override */
+    .leaflet-popup-content-wrapper {
+      background: rgba(6,22,36,0.96) !important;
+      border: 1px solid rgba(0,206,209,0.3) !important;
+      border-radius: 12px !important;
+      color: #f0f8ff !important;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
+    }
+    .leaflet-popup-tip { background: rgba(6,22,36,0.96) !important; }
+    .leaflet-popup-content { margin: 14px 16px !important; }
+    .pop-nom { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .pop-meta { font-size: 0.8rem; color: rgba(240,248,255,0.58); line-height: 1.65; }
+    .pop-badge {
+      display: inline-block; font-size: 0.67rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      padding: 0.18rem 0.6rem; border-radius: 4px; margin-top: 0.55rem;
+    }
+    .pop-beach    { background: rgba(244,164,96,0.18); color: #F4A460; }
+    .pop-river    { background: rgba(30,144,255,0.18); color: #1E90FF; }
+    .pop-waterfall{ background: rgba(0,206,209,0.18);  color: #00CED1; }
+    .pop-gmaps {
+      display: block; font-size: 0.75rem;
+      color: var(--teal); text-decoration: none; margin-top: 0.5rem;
+    }
+    .pop-gmaps:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <a href="#" class="nav-logo">🌊 Eaux de Guadeloupe</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#carte">Carte</a></li>
+    <li><a href="#api">API</a></li>
+    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="https://github.com/dimitriaigle/List_of_beaches_and_rivers_of_Guadeloupe" target="_blank" rel="noopener" class="nav-cta">GitHub</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-content">
+    <span class="hero-pill"><span class="pill-dot"></span>Open Data · Guadeloupe</span>
+
+    <h1 class="hero-title">
+      Eaux de<br><em>Guadeloupe</em>
+    </h1>
+
+    <p class="hero-sub">
+      Le dataset ouvert des plages, rivières et cascades de l'archipel.<br>
+      API REST · GeoJSON · KML · CSV
+    </p>
+
+    <div class="stats-row">
+      <div class="stat-chip">
+        <span class="stat-num" id="s-beaches">—</span>
+        <span class="stat-lbl">Plages</span>
+      </div>
+      <div class="stat-chip">
+        <span class="stat-num" id="s-rivers">—</span>
+        <span class="stat-lbl">Rivières</span>
+      </div>
+      <div class="stat-chip">
+        <span class="stat-num" id="s-falls">—</span>
+        <span class="stat-lbl">Cascades</span>
+      </div>
+      <div class="stat-chip">
+        <span class="stat-num">5</span>
+        <span class="stat-lbl">Îles</span>
+      </div>
+    </div>
+
+    <div class="ctas">
+      <a href="#carte" class="btn-primary">Explorer la carte →</a>
+      <a href="#tarifs" class="btn-ghost">Obtenir une clé API</a>
+    </div>
+  </div>
+
+  <svg class="wave-sep" style="position:absolute;bottom:-1px;left:0;right:0"
+       viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z" fill="#0a2540"/>
+  </svg>
+</section>
+
+<!-- ── MAP ── -->
+<section id="carte">
+  <div id="map"></div>
+  <div class="map-panel">
+    <span class="panel-title">Filtres</span>
+
+    <div class="search-box">
+      <span class="search-ico">🔍</span>
+      <input type="text" id="map-search" placeholder="Rechercher…" autocomplete="off">
+    </div>
+
+    <div>
+      <span class="filter-lbl">Type</span>
+      <div class="checks">
+        <label class="chk chk-beach">
+          <input type="checkbox" id="cb-beach" checked>
+          <span class="chk-box"></span>Plages
+        </label>
+        <label class="chk chk-river">
+          <input type="checkbox" id="cb-river" checked>
+          <span class="chk-box"></span>Rivières
+        </label>
+        <label class="chk chk-fall">
+          <input type="checkbox" id="cb-fall" checked>
+          <span class="chk-box"></span>Cascades
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <span class="filter-lbl">Île</span>
+      <select id="ile-sel" class="map-select">
+        <option value="">Toutes les îles</option>
+        <option>Grande-Terre</option>
+        <option>Basse-Terre</option>
+        <option>Marie-Galante</option>
+        <option>La Désirade</option>
+        <option>Les Saintes</option>
+      </select>
+    </div>
+
+    <div class="map-count" id="map-count">Chargement…</div>
+  </div>
+</section>
+
+<!-- ── FEATURES ── -->
+<section id="features" class="content-section">
+  <div class="section-wrap">
+    <span class="eyebrow">Fonctionnalités</span>
+    <h2 class="section-h">Tout ce dont vous avez besoin</h2>
+    <div class="feat-grid">
+      <div class="feat-card fade-up">
+        <span class="feat-icon">🗺️</span>
+        <h3>Carte interactive</h3>
+        <p>Explorez les 196 lieux recensés sur une carte filtrable par type, île ou commune. Données chargées en temps réel depuis l'API.</p>
+      </div>
+      <div class="feat-card fade-up">
+        <span class="feat-icon">📡</span>
+        <h3>API REST</h3>
+        <p>Intégrez les données dans vos applications via une API documentée (Swagger). Clé gratuite, 100 requêtes par jour.</p>
+      </div>
+      <div class="feat-card fade-up">
+        <span class="feat-icon">📦</span>
+        <h3>Open Data</h3>
+        <p>GeoJSON, KML, CSV, JSON — tous les formats disponibles. Licence MIT, usage libre pour tout projet personnel ou commercial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── API ── -->
+<section id="api" class="content-section">
+  <div class="section-wrap">
+    <div class="api-grid">
+      <div class="api-left">
+        <span class="eyebrow">Développeurs</span>
+        <h2 class="section-h">Intégrez<br>les données</h2>
+        <p>Une API REST simple et documentée pour accéder aux plages, rivières et cascades de Guadeloupe depuis vos applications.</p>
+
+        <div class="endpoints">
+          <div class="ep"><span class="method">GET</span>/v1/beaches</div>
+          <div class="ep"><span class="method">GET</span>/v1/rivers</div>
+          <div class="ep"><span class="method">GET</span>/v1/locations?type=beach&amp;ile=Grande-Terre</div>
+          <div class="ep"><span class="method">GET</span>/v1/stats</div>
+          <div class="ep"><span class="method post">POST</span>/v1/keys/register</div>
+        </div>
+
+        <a href="/docs" class="btn-primary">Documentation Swagger →</a>
+      </div>
+
+      <div class="code-blocks">
+        <div class="code-block fade-up">
+          <div class="code-head">
+            <div class="dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
+            <span class="code-lang">Terminal</span>
+          </div>
+          <div class="code-body"><span class="t-g">curl</span> <span class="t-b">/v1/beaches</span></div>
+        </div>
+
+        <div class="code-block fade-up">
+          <div class="code-head">
+            <div class="dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
+            <span class="code-lang">Terminal</span>
+          </div>
+          <div class="code-body"><span class="t-g">curl</span> <span class="t-p">-H</span> <span class="t-y">"X-API-Key: gw_xxx"</span> \
+  <span class="t-b">/v1/locations</span><span class="t-p">?type=beach&ile=Grande-Terre</span></div>
+        </div>
+
+        <div class="code-block fade-up">
+          <div class="code-head">
+            <div class="dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
+            <span class="code-lang">Terminal</span>
+          </div>
+          <div class="code-body"><span class="t-g">curl</span> <span class="t-p">-X POST</span> <span class="t-b">/v1/keys/register</span> \
+  <span class="t-p">-H</span> <span class="t-y">"Content-Type: application/json"</span> \
+  <span class="t-p">-d</span> <span class="t-y">'{"email":"vous@exemple.com","name":"Mon App"}'</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ── -->
+<section id="tarifs" class="content-section">
+  <div class="section-wrap">
+    <span class="eyebrow">Tarifs</span>
+    <h2 class="section-h">Simple et transparent</h2>
+    <p class="tarifs-sub">Commencez gratuitement, passez en premium quand vous avez besoin de plus.</p>
+
+    <div class="pricing-grid">
+      <!-- Free -->
+      <div class="price-card fade-up">
+        <div class="price-tier">Free</div>
+        <div class="price-val">0<sub>&nbsp;€/mois</sub></div>
+        <div class="price-desc">Pour les projets personnels et l'exploration</div>
+        <ul class="price-features">
+          <li>100 requêtes par jour</li>
+          <li>Tous les endpoints</li>
+          <li>Clé API en quelques secondes</li>
+          <li>Données mises à jour mensuellement</li>
+        </ul>
+        <div class="reg-form">
+          <input type="email" id="reg-email" placeholder="votre@email.com">
+          <input type="text"  id="reg-name"  placeholder="Nom de votre app (optionnel)">
+          <button class="btn-teal-full" id="reg-btn">Obtenir ma clé gratuite</button>
+          <div class="key-out" id="key-out"></div>
+          <div class="key-err" id="key-err"></div>
+        </div>
+      </div>
+
+      <!-- Premium -->
+      <div class="price-card hot fade-up">
+        <div class="hot-badge">Recommandé</div>
+        <div class="price-tier">Premium</div>
+        <div class="price-val">Sur<sub>&nbsp;devis</sub></div>
+        <div class="price-desc">Pour les applications en production et les entreprises</div>
+        <ul class="price-features">
+          <li>Requêtes illimitées</li>
+          <li>Support prioritaire</li>
+          <li>SLA garanti</li>
+          <li>Données enrichies (photos, accès, accessibilité)</li>
+        </ul>
+        <a href="mailto:dimitriaigle@gmail.com?subject=Guadeloupe%20Waters%20API%20Premium"
+           class="btn-outline-full">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <a href="#" class="foot-logo">🌊 Eaux de Guadeloupe</a>
+  <span class="foot-copy">Données open data · MIT License · Guadeloupe 🇬🇵</span>
+  <div class="foot-links">
+    <a href="https://github.com/dimitriaigle/List_of_beaches_and_rivers_of_Guadeloupe"
+       target="_blank" rel="noopener">GitHub</a>
+    <a href="/docs">API Docs</a>
+    <a href="/v1/stats">Stats</a>
+  </div>
+</footer>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script>
+/* ── PARTICLES ── */
+(function () {
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 28; i++) {
+    const el = document.createElement('div');
+    el.className = 'particle';
+    const size = 1.5 + Math.random() * 2.5;
+    el.style.cssText = `
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      width:${size}px; height:${size}px;
+      animation-duration:${9+Math.random()*14}s;
+      animation-delay:${Math.random()*10}s;
+    `;
+    container.appendChild(el);
+  }
+})();
+
+/* ── NAV SCROLL ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+/* ── BURGER ── */
+const burger  = document.getElementById('burger');
+const navList = document.getElementById('nav-links');
+burger.addEventListener('click', () => navList.classList.toggle('open'));
+navList.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navList.classList.remove('open')));
+
+/* ── COUNTER ── */
+function countUp(el, target, ms = 1100) {
+  const t0 = performance.now();
+  (function tick(now) {
+    const p = Math.min((now - t0) / ms, 1);
+    el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target);
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+
+/* ── LEAFLET MAP ── */
+const map = L.map('map', { zoomControl: true }).setView([16.17, -61.58], 10);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}{r}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 19,
+}).addTo(map);
+
+const COLORS = { beach: '#F4A460', river: '#1E90FF', waterfall: '#00CED1' };
+const LABELS = { beach: 'Plage', river: 'Rivière', waterfall: 'Cascade' };
+
+let allM = [];
+const clusters = L.markerClusterGroup({ chunkedLoading: true });
+map.addLayer(clusters);
+
+function popup(loc) {
+  const cls  = loc.type || '';
+  const lbl  = LABELS[cls] || cls;
+  const gm   = `https://maps.google.com/?q=${loc.lat},${loc.lon}`;
+  return `<div class="pop-nom">${loc.nom}</div>
+<div class="pop-meta">${loc.commune}${loc.ile ? ' · ' + loc.ile : ''}<br>CP ${loc.code_postal || '—'}</div>
+<span class="pop-badge pop-${cls}">${lbl}</span>
+<a class="pop-gmaps" href="${gm}" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a>`;
+}
+
+function filter() {
+  const q    = document.getElementById('map-search').value.toLowerCase();
+  const shB  = document.getElementById('cb-beach').checked;
+  const shR  = document.getElementById('cb-river').checked;
+  const shF  = document.getElementById('cb-fall').checked;
+  const ile  = document.getElementById('ile-sel').value;
+  clusters.clearLayers();
+  let n = 0;
+  allM.forEach(({ marker, loc }) => {
+    const ok =
+      ((loc.type === 'beach' && shB) || (loc.type === 'river' && shR) || (loc.type === 'waterfall' && shF)) &&
+      (!ile  || loc.ile  === ile) &&
+      (!q    || loc.nom.toLowerCase().includes(q));
+    if (ok) { clusters.addLayer(marker); n++; }
+  });
+  document.getElementById('map-count').innerHTML = `<strong>${n}</strong> lieux affichés`;
+}
+
+fetch('/v1/locations?limit=1000')
+  .then(r => r.json())
+  .then(resp => {
+    const locs = Array.isArray(resp) ? resp : (resp.data || []);
+    const counts = { beach: 0, river: 0, waterfall: 0 };
+    locs.forEach(l => { if (counts[l.type] !== undefined) counts[l.type]++; });
+    countUp(document.getElementById('s-beaches'), counts.beach);
+    countUp(document.getElementById('s-rivers'),  counts.river);
+    countUp(document.getElementById('s-falls'),   counts.waterfall);
+    locs.forEach(loc => {
+      if (!loc.lat || !loc.lon) return;
+      const m = L.circleMarker([loc.lat, loc.lon], {
+        radius: 7, fillColor: COLORS[loc.type] || '#fff',
+        color: '#fff', weight: 1.5, fillOpacity: 0.85,
+      }).bindPopup(popup(loc), { maxWidth: 240 });
+      allM.push({ marker: m, loc });
+    });
+    filter();
+  })
+  .catch(() => {
+    document.getElementById('map-count').textContent = 'Erreur de chargement';
+  });
+
+['map-search','cb-beach','cb-river','cb-fall','ile-sel'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('input', filter);
+  el.addEventListener('change', filter);
+});
+
+/* ── SCROLL ANIMATIONS ── */
+const obs = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+  { threshold: 0.12 }
+);
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+/* ── KEY REGISTRATION ── */
+document.getElementById('reg-btn').addEventListener('click', async () => {
+  const email = document.getElementById('reg-email').value.trim();
+  const name  = document.getElementById('reg-name').value.trim() || 'Mon App';
+  const btn   = document.getElementById('reg-btn');
+  const out   = document.getElementById('key-out');
+  const err   = document.getElementById('key-err');
+
+  out.classList.remove('show');
+  err.classList.remove('show');
+
+  if (!email || !email.includes('@')) {
+    err.textContent = 'Adresse email invalide.';
+    err.classList.add('show');
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Création en cours…';
+
+  try {
+    const res  = await fetch('/v1/keys/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, name }),
+    });
+    const data = await res.json();
+    if (res.ok && data.key) {
+      out.textContent = data.key;
+      out.classList.add('show');
+      btn.textContent = '✓ Clé créée !';
+      btn.style.background = '#28c840';
+    } else {
+      throw new Error(data.detail || 'Erreur serveur');
+    }
+  } catch (e) {
+    err.textContent = 'Erreur : ' + e.message;
+    err.classList.add('show');
+    btn.disabled = false;
+    btn.textContent = 'Obtenir ma clé gratuite';
+  }
+});
+</script>
+</body>
+</html>

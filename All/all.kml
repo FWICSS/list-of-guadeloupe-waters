@@ -1,0 +1,1620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Guadeloupe Waters</name>
+    <description>Plages, rivières et cascades de Guadeloupe — github.com/dimitriaigle</description>
+    <Style id="style_beach">
+      <IconStyle>
+        <color>ff00d7ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/sunny.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.8</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="style_river">
+      <IconStyle>
+        <color>ffff5500</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/water.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.8</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="style_waterfall">
+      <IconStyle>
+        <color>ff0099ff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/water.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.8</scale>
+      </LabelStyle>
+    </Style>
+    <Folder>
+      <name>Plages</name>
+      <Placemark>
+        <name>Plage de la Chapelle</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Chapelle&lt;/b&gt;&lt;br/&gt;Commune : Anse-Bertrand&lt;br/&gt;Code postal : 97121&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.51292251848841,16.4712254,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse Laborde</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse Laborde&lt;/b&gt;&lt;br/&gt;Commune : Anse-Bertrand&lt;br/&gt;Code postal : 97121&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.50102770703285,16.4840421,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trou à Man Lwi</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Trou à Man Lwi&lt;/b&gt;&lt;br/&gt;Commune : Anse-Bertrand&lt;br/&gt;Code postal : 97121&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.49737344283831,16.48569885,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse Colas</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse Colas&lt;/b&gt;&lt;br/&gt;Commune : Anse-Bertrand&lt;br/&gt;Code postal : 97121&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.5229615710841,16.46269045,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Porte d'Enfer</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Porte d'Enfer&lt;/b&gt;&lt;br/&gt;Commune : Anse-Bertrand&lt;br/&gt;Code postal : 97121&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.44169813718631,16.4862218,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Sources</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Sources&lt;/b&gt;&lt;br/&gt;Commune : Baillif&lt;br/&gt;Code postal : 97123&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.74835409528754,16.0273327,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Rivière-Sens</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Rivière-Sens&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.71551434365537,15.9808561,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Sources</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Sources&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.74835409528754,16.0273327,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Val de l'Orge</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Val de l'Orge&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.75490434892015,16.040281049999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Rocroy</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Rocroy&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.76089250991379,16.04659015,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse à Sable</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse à Sable&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.77511726090683,16.1483888,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Petite Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Petite Anse&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.77069854617928,16.09606265,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Malendure</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Malendure&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.77642613263339,16.171961699999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Roseau</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Roseau&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.55902578446879,16.093152850000003,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Feuillère</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Feuillère&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-de-Marie-Galante&lt;br/&gt;Code postal : 97140&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.22297658187817,15.888384649999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Ferrière</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Ferrière&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-de-Marie-Galante&lt;br/&gt;Code postal : 97140&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.22676685185252,15.88585115,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Petite Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Petite Anse&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-de-Marie-Galante&lt;br/&gt;Code postal : 97140&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.233512877083335,15.8799991,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plages des Galets</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plages des Galets&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-de-Marie-Galante&lt;br/&gt;Code postal : 97140&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.19982923575483,15.91126345,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Rivière-Sens</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Rivière-Sens&lt;/b&gt;&lt;br/&gt;Commune : Gourbeyre&lt;br/&gt;Code postal : 97113&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.71551434365537,15.9808561,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage à Fifi</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage à Fifi&lt;/b&gt;&lt;br/&gt;Commune : La Désirade&lt;br/&gt;Code postal : 97127&lt;br/&gt;Île : La Désirade&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.0703128517749,16.3029607,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage à Fanfan</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage à Fanfan&lt;/b&gt;&lt;br/&gt;Commune : La Désirade&lt;br/&gt;Code postal : 97127&lt;br/&gt;Île : La Désirade&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.07782551766479,16.299796899999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Souffleur</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Souffleur&lt;/b&gt;&lt;br/&gt;Commune : La Désirade&lt;br/&gt;Code postal : 97127&lt;br/&gt;Île : La Désirade&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.0447154225855,16.3103181,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Galets</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Galets&lt;/b&gt;&lt;br/&gt;Commune : La Désirade&lt;br/&gt;Code postal : 97127&lt;br/&gt;Île : La Désirade&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.09432905735294,16.2938592,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Baie-Mahault</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Baie-Mahault&lt;/b&gt;&lt;br/&gt;Commune : La Désirade&lt;br/&gt;Code postal : 97127&lt;br/&gt;Île : La Désirade&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.01397384834617,16.32934815,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Deshaies</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Deshaies&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.79495035693684,16.30550125,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage Bosco</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage Bosco&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.801744239267016,16.2861063,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Rifflet</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Rifflet&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.787775332636315,16.3350309,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Leroux</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Leroux&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.80418566891362,16.27547895,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Petit Bas Vent</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Petit Bas Vent&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.776615914551826,16.3472683,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Grand Bas Du Vent</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Grand Bas Du Vent&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.77451180079052,16.3494147,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Tillet</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Tillet&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.76891510447059,16.350813950000003,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Bébés</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Bébés&lt;/b&gt;&lt;br/&gt;Commune : Grand-Bourg&lt;br/&gt;Code postal : 97112&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.28939031480863,15.871186699999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Trois Îlets</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Trois Îlets&lt;/b&gt;&lt;br/&gt;Commune : Grand-Bourg&lt;br/&gt;Code postal : 97112&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.33427747157042,15.925298699999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Folle Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Folle Anse&lt;/b&gt;&lt;br/&gt;Commune : Grand-Bourg&lt;br/&gt;Code postal : 97112&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.32334671335073,15.94934955,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Datcha</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Datcha&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.494683533183874,16.20475935,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse Tabarin</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse Tabarin&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.50049828874144,16.205391149999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Grand Baie</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Grand Baie&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.50738695589777,16.21226975,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Vinaigri</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Vinaigri&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.46984685795807,16.19938965,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Caye d'Argent</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Caye d'Argent&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.52743113669399,16.2163743,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Salines</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Salines&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.443026224105544,16.205200599999998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Petit-Havre</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Petit-Havre&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.42569407483619,16.20927915,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Les Deux Oursins</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Les Deux Oursins&lt;/b&gt;&lt;br/&gt;Commune : Le Gosier&lt;br/&gt;Code postal : 97190&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.42335849942228,16.209645899999998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Babin</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Babin&lt;/b&gt;&lt;br/&gt;Commune : Morne-à-l'Eau&lt;br/&gt;Code postal : 97111&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.52613450339696,16.341054200000002,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Port</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Port&lt;/b&gt;&lt;br/&gt;Commune : Morne-à-l'Eau&lt;br/&gt;Code postal : 97111&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.49656663633388,16.3786408,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Pointe Sable</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Pointe Sable&lt;/b&gt;&lt;br/&gt;Commune : Morne-à-l'Eau&lt;br/&gt;Code postal : 97111&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.51077688872549,16.38738635,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de L'Autre Bord</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de L'Autre Bord&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.340883371115154,16.32966285,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Autre Bord</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Autre Bord&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.340525706509354,16.3326014,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'autre bord</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'autre bord&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.33777376165689,16.33331855,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Alizés</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Alizés&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.3361038,16.3335341,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Montal</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Montal&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.324999,16.3319922,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Dauphins</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Dauphins&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.32505851490956,16.3321348,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Port</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Port&lt;/b&gt;&lt;br/&gt;Commune : Petit-Canal&lt;br/&gt;Code postal : 97131&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.49656663633388,16.3786408,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse des Corps</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse des Corps&lt;/b&gt;&lt;br/&gt;Commune : Petit-Canal&lt;br/&gt;Code postal : 97131&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.402691424261604,16.41659005,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Caye d'Argent</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Caye d'Argent&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.52743113669399,16.2163743,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Bas-du-Fort</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Bas-du-Fort&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.523198811680516,16.21408675,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Grand Baie</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Grand Baie&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.50738695589777,16.21226975,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse Tabarin</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse Tabarin&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.50049828874144,16.205391149999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Datcha</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Datcha&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.494683533183874,16.20475935,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse à Coq</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse à Coq&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.252348462854656,15.992527299999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Folle Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Folle Anse&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.32334671335073,15.94934955,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anse Canot</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Anse Canot&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30549652586426,15.981853399999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Vieux Fort</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Vieux Fort&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30150112603694,15.9877459,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Bambou</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Bambou&lt;/b&gt;&lt;br/&gt;Commune : Pointe-à-Pitre&lt;br/&gt;Code postal : 97110&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.29869161612311,15.99218105,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage Marigot</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage Marigot&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.792032226050424,16.235477850000002,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse Caraïbe</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse Caraïbe&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.78272410002048,16.2122042,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Petite Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Petite Anse&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.80580252514425,16.2679297,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage à Jouibert</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage à Jouibert&lt;/b&gt;&lt;br/&gt;Commune : Port-Louis&lt;br/&gt;Code postal : 97117&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.53244632007299,16.413437700000003,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Souffleur</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Souffleur&lt;/b&gt;&lt;br/&gt;Commune : Port-Louis&lt;br/&gt;Code postal : 97117&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.535721077135506,16.4286248,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anse Gris Gris</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Anse Gris Gris&lt;/b&gt;&lt;br/&gt;Commune : Port-Louis&lt;br/&gt;Code postal : 97117&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.528362099403196,16.403484249999998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Antigues</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Antigues&lt;/b&gt;&lt;br/&gt;Commune : Port-Louis&lt;br/&gt;Code postal : 97117&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.5367406042464,16.434504949999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Pointe Sable</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Pointe Sable&lt;/b&gt;&lt;br/&gt;Commune : Port-Louis&lt;br/&gt;Code postal : 97117&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.51077688872549,16.38738635,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Raisins Clairs</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Raisins Clairs&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.280335252590376,16.250192849999998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Haut du Bourg</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Haut du Bourg&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.2675518,16.2506377,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Pointe des Pies</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Pointe des Pies&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.265553491660725,16.25092,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Lagon</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Lagon&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.26438667657909,16.2519513,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Champagne</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Champagne&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.26204099224294,16.25312155,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse des Rochers</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse des Rochers&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30588096398627,16.2420741,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anse à la Baie</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Anse à la Baie&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.248199281310676,16.2784098,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Rouleaux</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Rouleaux&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.24325521991395,16.27349545,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la Douche</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la Douche&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.23100070992571,16.2530775,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de la douche</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de la douche&lt;/b&gt;&lt;br/&gt;Commune : Saint-François&lt;br/&gt;Code postal : 97118&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.22988467616641,16.2528635,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anse Canot</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Anse Canot&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30549652586426,15.981853399999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage des Sources</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage des Sources&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.74835409528754,16.0273327,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Vieux Fort</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Vieux Fort&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30150112603694,15.9877459,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Val de l'Orge</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Val de l'Orge&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.75490434892015,16.040281049999997,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Bambou</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Bambou&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.29869161612311,15.99218105,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Rocroy</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Rocroy&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.76089250991379,16.04659015,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse à Coq</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse à Coq&lt;/b&gt;&lt;br/&gt;Commune : Saint-Louis&lt;br/&gt;Code postal : 97134&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.252348462854656,15.992527299999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Bourg</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Bourg&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Anne&lt;br/&gt;Code postal : 97180&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.38097426571734,16.222571000000002,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Caravelle</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;La Caravelle&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Anne&lt;br/&gt;Code postal : 97180&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.39450045445376,16.218232399999998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Belley</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Belley&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Anne&lt;br/&gt;Code postal : 97180&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.36823032510067,16.2326105,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Bois Jolan</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Bois Jolan&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Anne&lt;br/&gt;Code postal : 97180&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.34715958678582,16.23728375,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Gros Sable</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Gros Sable&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Anne&lt;br/&gt;Code postal : 97180&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.33933869077809,16.2414418,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage Mambia</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage Mambia&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.717643726043804,16.345109649999998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Petit Fort</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Petit Fort&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.74227310174806,16.36051425,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse des Îles</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse des Îles&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.747154454314725,16.3567246,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.759146263917145,16.35525475,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Grande-Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Grande-Anse&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.624811243532776,15.85944395,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Grand Baie</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Grand Baie&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.62044851040858,15.8555148,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse à Dos</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse à Dos&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.646856359700905,15.85403465,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Rodrigue</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Rodrigue&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.579576682314,15.85800055,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Figuier</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Figuier&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.588745982678915,15.85904835,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Pompierre</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Pompierre&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.57139823307925,15.8721812,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Pain de Sucre</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Pain de Sucre&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.59876457041109,15.863518,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Crawen</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Crawen&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.602652890899776,15.8577711,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse du Grand-Etang</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse du Grand-Etang&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Bas&lt;br/&gt;Code postal : 97136&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.58734369686084,15.8392761,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Rodrigue</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Rodrigue&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Haut&lt;br/&gt;Code postal : 97137&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.579576682314,15.85800055,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Figuier</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Figuier&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Haut&lt;br/&gt;Code postal : 97137&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.588745982678915,15.85904835,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Pompierre</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Pompierre&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Haut&lt;br/&gt;Code postal : 97137&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.57139823307925,15.8721812,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Pain de Sucre</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Pain de Sucre&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Haut&lt;br/&gt;Code postal : 97137&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.59876457041109,15.863518,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Crawen</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Crawen&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Haut&lt;br/&gt;Code postal : 97137&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.602652890899776,15.8577711,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Anse du Grand-Etang</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Anse du Grand-Etang&lt;/b&gt;&lt;br/&gt;Commune : Terre-de-Haut&lt;br/&gt;Code postal : 97137&lt;br/&gt;Île : Les Saintes&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.58734369686084,15.8392761,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse Bambou</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse Bambou&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Fort&lt;br/&gt;Code postal : 97141&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.29869161612311,15.99218105,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage du Vieux Fort</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage du Vieux Fort&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Fort&lt;br/&gt;Code postal : 97141&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30150112603694,15.9877459,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Anse Canot</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Anse Canot&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Fort&lt;br/&gt;Code postal : 97141&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30549652586426,15.981853399999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Moustique</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Moustique&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Fort&lt;br/&gt;Code postal : 97141&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.30778149752429,15.978006950000001,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse à Coq</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse à Coq&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Fort&lt;br/&gt;Code postal : 97141&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.252348462854656,15.992527299999999,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Folle Anse</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Folle Anse&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Fort&lt;br/&gt;Code postal : 97141&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.32334671335073,15.94934955,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Simaho</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Simaho&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Habitants&lt;br/&gt;Code postal : 97119&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.76857369415267,16.05715185,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de l'Étang</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de l'Étang&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Habitants&lt;br/&gt;Code postal : 97119&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.76889955787496,16.0683875,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage de Rocroy</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage de Rocroy&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Habitants&lt;br/&gt;Code postal : 97119&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.76089250991379,16.04659015,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plage d'Anse du Val de l'Orge</name>
+        <styleUrl>#style_beach</styleUrl>
+        <description>&lt;b&gt;Plage d'Anse du Val de l'Orge&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Habitants&lt;br/&gt;Code postal : 97119&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Beach</description>
+        <Point>
+          <coordinates>-61.75490434892015,16.040281049999997,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Rivières</name>
+      <Placemark>
+        <name>Rivière d'Audoin</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière d'Audoin&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Anne&lt;br/&gt;Code postal : 97180&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.359171,16.3004007,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ravine Bacadore</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Ravine Bacadore&lt;/b&gt;&lt;br/&gt;Commune : Les Abymes&lt;br/&gt;Code postal : 97101&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5248714,16.2567174,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de Baille-Argent</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de Baille-Argent&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7712066,16.2669616,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Baillif</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Baillif&lt;/b&gt;&lt;br/&gt;Commune : Baillif&lt;br/&gt;Code postal : 97123&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7303847,16.0348095,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Bananier</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Bananier&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6071132,16.0153596,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Baraguet</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Baraguet&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7434107,16.236248,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de Beaugendre</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de Beaugendre&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Habitants&lt;br/&gt;Code postal : 97119&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7335328,16.1091115,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Bourceau</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Bourceau&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7720716,16.1562519,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Bras-David</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Bras-David&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.670177,16.1958792,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Caillou (rivière)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Caillou (rivière)&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7835744,16.2333037,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Coin</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Coin&lt;/b&gt;&lt;br/&gt;Commune : Baie-Mahault&lt;br/&gt;Code postal : 97122&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5891732,16.2354032,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Colas</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Colas&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7554573,16.1833152,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Corossol</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Corossol&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.698446,16.159159,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière aux écrevisses</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière aux écrevisses&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.685871,16.1702927,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petite Rivière (Deshaies)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Petite Rivière (Deshaies)&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7788455,16.2742012,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Ferry</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Ferry&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7912243,16.2846206,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Galion</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Galion&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7175775,15.9915418,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ravine Gardel</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Ravine Gardel&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.3340658,16.3204266,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ravine Gaschet</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Ravine Gaschet&lt;/b&gt;&lt;br/&gt;Commune : Petit-Canal&lt;br/&gt;Code postal : 97131&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5098955,16.3893612,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petite Rivière à Goyave</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Petite Rivière à Goyave&lt;/b&gt;&lt;br/&gt;Commune : Goyave&lt;br/&gt;Code postal : 97128&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5762623,16.128716,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Grand Carbet</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Grand Carbet&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6521285,16.0456536,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Grande Anse</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Grande Anse&lt;/b&gt;&lt;br/&gt;Commune : Trois-Rivières&lt;br/&gt;Code postal : 97114&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.66274,15.9747587,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Grande Plaine</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Grande Plaine&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7587313,16.2073175,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grande Rivière à Goyaves</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Grande Rivière à Goyaves&lt;/b&gt;&lt;br/&gt;Commune : Lamentin&lt;br/&gt;Code postal : 97129&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6583083,16.2110427,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grande Rivière de la Capesterre</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Grande Rivière de la Capesterre&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6095181,16.0716221,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grande Rivière des Vieux-Habitants</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Grande Rivière des Vieux-Habitants&lt;/b&gt;&lt;br/&gt;Commune : Vieux-Habitants&lt;br/&gt;Code postal : 97119&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7535793,16.0574966,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière aux Herbes</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière aux Herbes&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7229751,15.9977243,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Houaromand</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Houaromand&lt;/b&gt;&lt;br/&gt;Commune : Baie-Mahault&lt;br/&gt;Code postal : 97122&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5762167,16.262076,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Bois Bananes</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Bois Bananes&lt;/b&gt;&lt;br/&gt;Commune : Lamentin&lt;br/&gt;Code postal : 97129&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7162141,16.2182987,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Bras de Sable</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Bras de Sable&lt;/b&gt;&lt;br/&gt;Commune : Lamentin&lt;br/&gt;Code postal : 97129&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7256875,16.1989262,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Lamentin</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Lamentin&lt;/b&gt;&lt;br/&gt;Commune : Lamentin&lt;br/&gt;Code postal : 97129&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6296489,16.2712906,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lézarde</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Lézarde&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6289797,16.1924028,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Lostau</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Lostau&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7630044,16.1618501,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Rate (rivière)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;La Rate (rivière)&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7729536,16.3245179,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Deshaies</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Deshaies&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7758399,16.2980244,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Madame</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Madame&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7325739,16.3316921,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Mitan</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Mitan&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7797695,16.3103858,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Ziotte</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Ziotte&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7852314,16.3220858,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Mahault</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Mahault&lt;/b&gt;&lt;br/&gt;Commune : Baie-Mahault&lt;br/&gt;Code postal : 97122&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6137259,16.2511524,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Maleville</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Maleville&lt;/b&gt;&lt;br/&gt;Commune : Deshaies&lt;br/&gt;Code postal : 97126&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.788849,16.2803454,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Moreau</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Moreau&lt;/b&gt;&lt;br/&gt;Commune : Goyave&lt;br/&gt;Code postal : 97128&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6115387,16.1228525,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Moustique (Petit-Bourg)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Moustique (Petit-Bourg)&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6270731,16.161369,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Moustique (Sainte-Rose)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Moustique (Sainte-Rose)&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7156788,16.29505,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de Nogent</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de Nogent&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7542009,16.3052626,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière des Pères</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière des Pères&lt;/b&gt;&lt;br/&gt;Commune : Basse-Terre&lt;br/&gt;Code postal : 97100&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7382042,16.0101017,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Pérou</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Pérou&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5876107,16.0549835,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canal de Perrin</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Canal de Perrin&lt;/b&gt;&lt;br/&gt;Commune : Les Abymes&lt;br/&gt;Code postal : 97111&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5131676,16.303908,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Petit Carbet</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Petit Carbet&lt;/b&gt;&lt;br/&gt;Commune : Trois-Rivières&lt;br/&gt;Code postal : 97114&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6476056,16.015253,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Petite Plaine</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Petite Plaine&lt;/b&gt;&lt;br/&gt;Commune : Pointe-Noire&lt;br/&gt;Code postal : 97116&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7612504,16.2244085,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petite Rivière de la Capesterre</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Petite Rivière de la Capesterre&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.6548523,16.0808028,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Plessis</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Plessis&lt;/b&gt;&lt;br/&gt;Commune : Baillif&lt;br/&gt;Code postal : 97123&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.73222,16.0515187,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de la Ramée</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de la Ramée&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7192642,16.3265206,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ravine du Nord-Ouest</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Ravine du Nord-Ouest&lt;/b&gt;&lt;br/&gt;Commune : Le Moule&lt;br/&gt;Code postal : 97160&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.370506,16.333419,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ravine Salée</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Ravine Salée&lt;/b&gt;&lt;br/&gt;Commune : Gourbeyre&lt;br/&gt;Code postal : 97113&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7049073,15.9755789,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de Bouillante</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de Bouillante&lt;/b&gt;&lt;br/&gt;Commune : Bouillante&lt;br/&gt;Code postal : 97125&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7565113,16.1363365,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière la Rose</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière la Rose&lt;/b&gt;&lt;br/&gt;Commune : Goyave&lt;br/&gt;Code postal : 97128&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.58501054933737,16.14746825,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canal des Rotours</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Canal des Rotours&lt;/b&gt;&lt;br/&gt;Commune : Morne-à-l'Eau&lt;br/&gt;Code postal : 97111&lt;br/&gt;Île : Grande-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.4727585,16.3417751,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Saint-Denis</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Saint-Denis&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5685049,16.0420951,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de Saint-Louis</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de Saint-Louis&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-de-Marie-Galante&lt;br/&gt;Code postal : 97140&lt;br/&gt;Île : Marie-Galante&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.2567917,15.9206299,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière de Sainte-Marie</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière de Sainte-Marie&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5753476,16.0944915,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Salée (Sainte-Rose)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Salée (Sainte-Rose)&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7125403,16.319438,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière la Sarcelle</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière la Sarcelle&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.5835297,16.1619879,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière Sens</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière Sens&lt;/b&gt;&lt;br/&gt;Commune : Gourbeyre&lt;br/&gt;Code postal : 97113&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7077573,15.9911075,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivière du Vieux-Fort (Basse-Terre)</name>
+        <styleUrl>#style_river</styleUrl>
+        <description>&lt;b&gt;Rivière du Vieux-Fort (Basse-Terre)&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : River</description>
+        <Point>
+          <coordinates>-61.7537483,16.3342279,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Cascades</name>
+      <Placemark>
+        <name>Cascade de Bis</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Cascade de Bis&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.6963257,16.2799701,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chutes du Carbet</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Chutes du Carbet&lt;/b&gt;&lt;br/&gt;Commune : Capesterre-Belle-Eau&lt;br/&gt;Code postal : 97130&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.5879838,16.0121246,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cascade de Bois Bananes</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Cascade de Bois Bananes&lt;/b&gt;&lt;br/&gt;Commune : Lamentin&lt;br/&gt;Code postal : 97129&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.697559,16.2137003,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cascade aux écrevisses</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Cascade aux écrevisses&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.681502,16.1782001,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cascade de la Coulisse</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Cascade de la Coulisse&lt;/b&gt;&lt;br/&gt;Commune : Trois-Rivières&lt;br/&gt;Code postal : 97114&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.6320533,15.9750941,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chute du Galion</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Chute du Galion&lt;/b&gt;&lt;br/&gt;Commune : Gourbeyre&lt;br/&gt;Code postal : 97113&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.6628519,16.0316324,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saut de la Lézarde</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Saut de la Lézarde&lt;/b&gt;&lt;br/&gt;Commune : Petit-Bourg&lt;br/&gt;Code postal : 97170&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.655486,16.1777377,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saut de Matouba</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Saut de Matouba&lt;/b&gt;&lt;br/&gt;Commune : Saint-Claude&lt;br/&gt;Code postal : 97120&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.7049264,16.0466812,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chutes Moreau</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Chutes Moreau&lt;/b&gt;&lt;br/&gt;Commune : Goyave&lt;br/&gt;Code postal : 97128&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.653489,16.1061775,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saut des Trois Cornes</name>
+        <styleUrl>#style_waterfall</styleUrl>
+        <description>&lt;b&gt;Saut des Trois Cornes&lt;/b&gt;&lt;br/&gt;Commune : Sainte-Rose&lt;br/&gt;Code postal : 97115&lt;br/&gt;Île : Basse-Terre&lt;br/&gt;Type : Waterfall</description>
+        <Point>
+          <coordinates>-61.7264673,16.2856945,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
